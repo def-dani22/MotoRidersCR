@@ -1,6 +1,33 @@
-.navbar {
-    background-color: darkblue; /* Cambiar color de fondo */
+/* Estilo personalizado para el fondo azul oscuro */
+.bg-dark-blue {
+    background-color: darkblue; /* Azul oscuro */
 }
+
+/* Otros estilos personalizados */
+.navbar .logo-text {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.navbar .nav-item .btn-link {
+    color: white;
+}
+
+    .navbar .nav-item .btn-link:hover {
+        color: #cccccc;
+    }
+
+/* Estilo para el botón "Cotizar" */
+.navbar .btn-primary {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+    .navbar .btn-primary:hover {
+        background-color: #004494;
+        border-color: #004494;
+    }
+
 
 .container¨
 
@@ -12,7 +39,7 @@
 }
 
 .navbar .nav-item .btn-link {
-    color: #007bff; /* Azul para los enlaces */
+    color: white; /* Azul para los enlaces */
     font-size: 1.1rem;
     transition: color 0.3s;
 }
