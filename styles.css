@@ -56,14 +56,15 @@
 }
 
 
-/* Estilos para iconoi hamburguesa */
+/* Estilos para los elementos de la barra de navegación */
+
 .label-check {
     display: none;
 }
 
 .hamburger-label {
-    width: 15px;
-    height: 12px;
+    width: 17px;
+    height: 14px;
     display: block;
     cursor: pointer;
     position: relative;
@@ -104,11 +105,6 @@
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
     width: 17.5px;
-}
-
-#label-check:checked + .hamburger-label {
-    width: 15px; /* Ajusta el tamaño del área de interacción */
-    height: 12px; /* Ajusta el tamaño del área de interacción */
 }
 
 
