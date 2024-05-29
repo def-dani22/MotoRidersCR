@@ -104,6 +104,28 @@
 }
 
 
+/* Para dispositivos móviles con un ancho máximo de 768px */
+@media only screen and (max-width: 768px) {
+    .hamburger-label {
+        width: 25px; /* Nuevo ancho del contenedor del icono */
+        height: 21px; /* Nueva altura del contenedor del icono */
+    }
+
+        .hamburger-label div {
+            width: 25px; /* Nuevo ancho de cada línea del icono */
+            height: 3px; /* Nueva altura de cada línea del icono */
+        }
+
+    .line2 {
+        margin: 5px 0 0 0; /* Ajustamos el espacio entre las líneas 1 y 2 */
+    }
+
+    .line3 {
+        margin: 10px 0 0 0; /* Ajustamos el espacio entre las líneas 2 y 3 */
+    }
+}
+
+
 
 
 
