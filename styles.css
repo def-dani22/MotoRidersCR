@@ -1,13 +1,10 @@
 /* Estilo personalizado para el fondo azul oscuro */
 .bg-dark-blue {
-    background-color: darkblue; /* Azul oscuro */
+    background-color: blue; /* Azul oscuro */
 }
 
-/* Otros estilos personalizados */
-.navbar .logo-text {
-    font-size: 1.5rem;
-    color: white;
-}
+
+
 
 .navbar .nav-item .btn-link {
     color: white;
@@ -31,12 +28,7 @@
 
 .container¨
 
-.navbar .logo-text {
-    color: #ff0000; /* Rojo para coincidir con el texto del logo */
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-left: 10px;
-}
+
 
 .navbar .nav-item .btn-link {
     color: white; /* Azul para los enlaces */
@@ -64,22 +56,62 @@
 }
 
 
-
-.navbar-toggler {
-    border: none;
+.label-check {
+    display: none;
 }
 
-.navbar-toggler-icon {
-    color: #007bff; /* Azul para el icono de hamburguesa */
-    background-color: red; /* Cambiar color de fondo */
+.hamburger-label {
+    width: 70px;
+    height: 58px;
+    display: block;
+    cursor: pointer;
 }
+
+    .hamburger-label div {
+        width: 70px;
+        height: 6px;
+        background-color: #fff;
+        position: absolute;
+    }
+
+.line1 {
+    transition: all .3s;
+}
+
+.line2 {
+    margin: 18px 0 0 0;
+    transition: 0.3s;
+}
+
+.line3 {
+    margin: 36px 0 0 0;
+    transition: 0.3s;
+}
+
+#label-check:checked + .hamburger-label .line1 {
+    transform: rotate(35deg) scaleX(.55) translate(39px, -4.5px);
+    border-radius: 50px 50px 50px 0;
+}
+
+#label-check:checked + .hamburger-label .line3 {
+    transform: rotate(-35deg) scaleX(.55) translate(39px, 4.5px);
+    border-radius: 0 50px 50px 50px;
+}
+
+#label-check:checked + .hamburger-label .line2 {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    width: 45px;
+}
+
+
 
 
 
 
 /* Estilos para el logo en la barra de navegación */
 .inicio-icono {
-    width: 50px; /* Ancho del logo */
+    width: 70px; /* Ancho del logo */
     height: auto; /* Mantener la proporción original de la imagen */
     margin-right: 10px; /* Espaciado a la derecha del logo */
 }
@@ -92,13 +124,13 @@
 
 
 .logo-text {
-    font-size: 36px; /* Tamaño de la fuente */
+    font-size: 35px; /* Tamaño de la fuente */
     color: #ff0000; /* Color rojo */
     font-family: 'Arial', sans-serif; /* Tipo de fuente (puedes cambiarlo según tus preferencias) */
     font-weight: bold; /* Peso de la fuente (negrita) */
-
     letter-spacing: 2px; /* Espaciado entre letras */
-    /* Agregar más estilos según sea necesario */
+    font-family: 'Lobster', cursive;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000; /* Borde negro más grueso */
 }
 
 
@@ -256,3 +288,7 @@ footer {
 .features .card:hover .card-text {
     color: #fff;
 }
+
+
+
+
