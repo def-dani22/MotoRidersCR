@@ -55,21 +55,20 @@
     margin-right: 30px; /* Espaciado entre elementos de navegación */
 }
 
-
 .label-check {
     display: none;
 }
 
 .hamburger-label {
-    width: 70px;
-    height: 58px;
+    width: 35px; /* La mitad del ancho original */
+    height: 29px; /* La mitad de la altura original */
     display: block;
     cursor: pointer;
 }
 
     .hamburger-label div {
-        width: 70px;
-        height: 6px;
+        width: 35px; /* La mitad del ancho original */
+        height: 3px; /* La mitad de la altura original */
         background-color: #fff;
         position: absolute;
     }
@@ -79,29 +78,29 @@
 }
 
 .line2 {
-    margin: 18px 0 0 0;
+    margin: 7px 0 0 0; /* Ajustamos el espacio entre las líneas 1 y 2 */
     transition: 0.3s;
 }
 
 .line3 {
-    margin: 36px 0 0 0;
+    margin: 14px 0 0 0; /* Ajustamos el espacio entre las líneas 2 y 3 */
     transition: 0.3s;
 }
 
 #label-check:checked + .hamburger-label .line1 {
-    transform: rotate(35deg) scaleX(.55) translate(39px, -4.5px);
-    border-radius: 50px 50px 50px 0;
+    transform: rotate(35deg) scaleX(.55) translate(17.5px, -1px); /* Ajustamos la posición de la línea 1 */
+    border-radius: 25px 25px 25px 0; /* Ajustamos el radio de las esquinas de la línea 1 */
 }
 
 #label-check:checked + .hamburger-label .line3 {
-    transform: rotate(-35deg) scaleX(.55) translate(39px, 4.5px);
-    border-radius: 0 50px 50px 50px;
+    transform: rotate(-35deg) scaleX(.55) translate(17.5px, 1px); /* Ajustamos la posición de la línea 3 */
+    border-radius: 0 25px 25px 25px; /* Ajustamos el radio de las esquinas de la línea 3 */
 }
 
 #label-check:checked + .hamburger-label .line2 {
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    width: 45px;
+    border-top-right-radius: 25px; /* Ajustamos el radio de las esquinas superiores de la línea 2 */
+    border-bottom-right-radius: 25px; /* Ajustamos el radio de las esquinas inferiores de la línea 2 */
+    width: 17.5px; /* La mitad del ancho original */
 }
 
 
